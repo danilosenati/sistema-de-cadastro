@@ -37,3 +37,20 @@ CREATE TABLE usuarios (
 );
 ```
 ---
+2. Configure os dados de conexão na classe ConnectionFactory.java:
+   ```java
+    private static final String URL = "jdbc:mysql://localhost:3306/sistema_usuarios";
+    private static final String USER = "seu_usuario";
+    private static final String PASSWORD = "sua_senha";
+   ```
+---
+Como rodar:
+1. Clone o repositório
+
+2. Importe o projeto no NetBeans
+
+3. Configure o driver JDBC MySQL
+
+4. Crie a classe ConnectionFactory com as configurações do seu banco
+
+5. Execute a classe principal App.java
