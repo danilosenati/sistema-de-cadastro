@@ -23,5 +23,5 @@
 Thumbs.db
 
 # classe não deve ser comitada
-/src/conexao/Conexao.java
+/src/conexao/ConnectionFactory.java
 
