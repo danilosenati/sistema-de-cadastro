@@ -29,7 +29,7 @@ public class TableCreator {
             String sql =
                     """
                         CREATE TABLE IF NOT EXISTS usuarios(
-                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        idUsuario INT AUTO_INCREMENT PRIMARY KEY,
                         nome varchar(50) NOT NULL,
                         email varchar(80) NOT NULL);
                     """;
