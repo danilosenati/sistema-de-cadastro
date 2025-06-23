@@ -55,7 +55,11 @@ public class App {
         
         // REMOVENDO DADO DA TABELA:
         
-        usuarioDAO.removerUsuario(personagem4);
+        usuarioDAO.removerUsuario(4);
+        
+        /* REMOVENDO PASSANDO O OBJETO  do tipo usuario como parametro
+            usuarioDAO.removerUsuario(personagem4);
+        */
         
 //        *******************************************
         

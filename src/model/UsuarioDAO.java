@@ -88,6 +88,17 @@ public class UsuarioDAO {
     
     // REMOVENDO USUARIO PELO ID:
     
+    public void removerUsuario(int idUsuario) throws SQLException{
+        String sql = "DELETE FROM usuarios WHERE idUsuario=?";
+        
+        PreparedStatement stm = conexao.prepareStatement(sql);
+        stm.setInt(1, idUsuario);
+        stm.executeUpdate();
+        stm.execute();
+        stm.close();
+    }
+    
+    /*
     public void removerUsuario(Usuario usuario) throws SQLException{
         String sql = "DELETE FROM usuarios WHERE idUsuario=?";
         
@@ -95,9 +106,9 @@ public class UsuarioDAO {
         stm.setInt(1, usuario.getIdUsuario());
         stm.executeUpdate();
         stm.execute();
-        stm.close();
-        
+        stm.close();    
     }
+    */
     
     // APAGANDO TODOS OS DADOS DA TABELA:
     
