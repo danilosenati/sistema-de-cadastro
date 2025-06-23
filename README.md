@@ -1,14 +1,16 @@
 # Projeto Java MVC com JDBC
 
-Este projeto é um exemplo básico de aplicação Java utilizando a arquitetura MVC (Model-View-Controller) e conexão com banco de dados MySQL via JDBC.
+Este é um projeto em Java desenvolvido utilizando JDBC e arquitetura MVC. O sistema permite realizar operações de CRUD (Create, Read, Update, Delete) sobre usuários em um banco de dados MariaDB.
 
 ---
 
 ## Funcionalidades
 
-- Cadastro de usuários com nome e e-mail
-- Listagem dos usuários cadastrados
-- Exclusão de usuários pelo ID
+- ✅ Adicionar usuário
+- ✅ Listar usuários
+- ✅ Atualizar dados do usuário
+- ✅ Remover usuário
+- ✅ Limpar a tabela de usuários
 
 ---
 
@@ -31,9 +33,9 @@ CREATE DATABASE sistema_usuarios;
 USE sistema_usuarios;
 
 CREATE TABLE usuarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL
+    idUsuario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    email VARCHAR(80) NOT NULL
 );
 ```
 ---
